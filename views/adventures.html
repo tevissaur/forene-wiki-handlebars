@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="�en�">
+
+<head>
+    <title>Forene Wiki</title>
+    <style>
+        body {
+            background-image: url('assets/Forene_Map.png');
+            
+        }
+        header{
+            background-color: #a78861;
+            height: 20%;
+        }
+        main{
+            background-color: #695741;
+        }
+        h1 {
+            padding: 10px;
+            margin-left: 40%;
+            margin-right: 40%;
+            font-style: italic;
+            background-color: burlywood;
+            text-align: left;
+            color: rgb(70, 47, 25);
+            border: 5px outset brown;
+            border-radius: 20px;
+        }
+
+        nav {
+            display: block;
+            height: 100px;
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            text-align: center;
+            color: brown;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #a78861;
+        }
+        ul li a{
+            color: rgb(70, 47, 25);
+        }
+        a:hover {
+            background-color: #a78861;
+            border: 5px inset rgb(165, 42, 4);
+        }
+
+        li a,
+        .dropbtn {
+            display: inline-block;
+            text-align: center;
+            font-size: larger;
+            padding: 5px;
+            background-color: burlywood;
+            border: 5px outset brown;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover .dropbtn {
+            background-color: #a78861;
+            border: 5px inset rgb(165, 42, 4);
+        }
+
+        li.dropdown {
+            background-color: #a78861;
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: burlywood;
+            min-width: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            text-decoration: none;
+        }
+
+        .dropdown-content a {
+            color: darkred;
+            font-size: small;
+            text-align: left;
+            text-decoration: none;
+            border: 5px outset rgb(165, 42, 4);
+        }
+
+        .dropdown-content a:hover {
+            background-color: #a78861;
+            border: 5px inset rgb(165, 42, 4);
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>The Continent of Forene</h1>
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a class="dropbtn" href="index.html"> Home </a>
+                    <div class="dropdown-content">
+                        <a href="#">Adventures</a>
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href="creatures.html"> Creatures</a>
+                    <div class="dropdown-content">
+                        <a href="creatures_env.html">Creatures by Envrionment</a>
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href=""> Races</a>
+                    <div class="dropdown-content">
+
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href=""> Geography</a>
+                    <div class="dropdown-content">
+                        <a href="#">The Human Realms</a>
+                        <a href="#">The Elven Domains</a>
+                        <a href="#">The Dwarven Holds</a>
+                        <a href="#">The Orcish Wastes</a>
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href=""> History</a>
+                    <div class="dropdown-content">
+
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href=""> Religions</a>
+                    <div class="dropdown-content">
+
+                    </div>
+                </li>
+                |
+                <li class="dropdown">
+                    <a class="dropbtn" href=""> Organizations</a>
+                    <div class="dropdown-content">
+
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
