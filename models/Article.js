@@ -22,11 +22,45 @@ Article.init(
             allowNull: false,
 
         },
+        articleImage: {
+            type: DataTypes.STRING,
+            allowNull: true,
+
+        },
+        articleImageDescription: {
+            type: DataTypes.STRING,
+            allowNull: true,
+        },
         author: {
+            type: DataTypes.STRING,
+            onDelete: 'SET NULL',
             references: {
-                model: User,
+                model: 'user',
+                key: 'id'
+            }
+        },
+        authorAlias: {
+            type: DataTypes.STRING,
+            allowNull: true,
+            // references model: Character,
+            //           key: id
+        },
+        pageId: {
+            type: DataTypes.INTEGER,
+            onDelete: 'SET NULL',
+            references: {
+                model: 'page',
                 key: 'id'
             }
         }
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'article',
     }
 )
+
+module.exports = Article
