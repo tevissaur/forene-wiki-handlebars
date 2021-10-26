@@ -1,6 +1,4 @@
 const { Model, DataTypes } = require('sequelize');
-const Article = require('./Article')
-const Tag = require('./Tag')
 
 const sequelize = require('../config/connection');
 
@@ -13,13 +11,14 @@ ArticleTag.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             primaryKey: true,
-            autoIncrement: true
+            autoIncrement: true,
+            unique: true,
         },
         articleId: {
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: Article,
+                model: 'article',
                 key: 'id'
             }
         },
@@ -27,7 +26,7 @@ ArticleTag.init(
             type: DataTypes.INTEGER,
             allowNull: true,
             references: {
-                model: Tag,
+                model: 'tag',
                 key: 'id'
             }
         }

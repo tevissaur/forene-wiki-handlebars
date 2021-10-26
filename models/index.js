@@ -3,10 +3,14 @@ const ArticleTag = require('./ArticleTag')
 const Tag = require('./Tag')
 const Page = require('./Page')
 const User = require('./User')
+const Image = require('./Image')
 
 
 Article.belongsTo(User, {
     foreignKey: 'pageId'
+})
+Article.hasOne(Image, {
+    foreignKey: 'articleId'
 })
 
 User.hasMany(Article, {
