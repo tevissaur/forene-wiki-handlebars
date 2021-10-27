@@ -4,43 +4,68 @@ const Tag = require('./Tag')
 const Page = require('./Page')
 const User = require('./User')
 const Image = require('./Image')
+const ArticleImage = require('./ArticleImage')
 
-
-Article.belongsTo(User, {
+Article.belongsTo(Page, {
     foreignKey: 'pageId'
-})
-Article.hasOne(Image, {
-    foreignKey: 'articleId'
-})
-
-User.hasMany(Article, {
-    foreignKey: 'author'
 })
 
 Page.hasMany(Article, {
     foreignKey: 'pageId'
 })
 
-Article.belongsToMany(Tag, {
+
+// Article.hasOne(Image, {
+//     foreignKey: 'articleImage'
+// })
+
+// Image.belongsTo(Article, {
+//     foreignKey: 'articleId'
+// })
+
+// User.hasMany(Article, {
+//     foreignKey: 'author'
+// })
+
+Article.belongsToMany(Image, {
     foreignKey: 'articleId',
     through: {
-        model: ArticleTag,
+        model: ArticleImage,
         unique: false
     }
 })
 
-Tag.belongsToMany(Article, {
-    foreignKey: 'tagId',
+Image.belongsToMany(Article, {
+    foreignKey: 'imageId',
     through: {
-        model: ArticleTag,
+        model: ArticleImage,
         unique: false
     }
 })
+
+
+// Article.belongsToMany(Tag, {
+//     foreignKey: 'articleId',
+//     through: {
+//         model: ArticleTag,
+//         unique: false
+//     }
+// })
+
+// Tag.belongsToMany(Article, {
+//     foreignKey: 'tagId',
+//     through: {
+//         model: ArticleTag,
+//         unique: false
+//     }
+// })
 
 module.exports = {
     Article,
     Tag, 
     ArticleTag,
     User,
-    Page
+    Page,
+    Image,
+    ArticleImage
 }

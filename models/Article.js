@@ -21,24 +21,15 @@ Article.init(
             allowNull: false,
 
         },
-        articleImage: {
-            type: DataTypes.STRING,
-            allowNull: true,
-            references: {
-                model: 'image',
-                key: 'id'
-            }
-
-        },
-        author: {
-            type: DataTypes.STRING,
-            allowNull: true,
-            onDelete: 'SET NULL',
-            references: {
-                model: 'user',
-                key: 'id'
-            }
-        },
+        // author: {
+        //     type: DataTypes.STRING,
+        //     allowNull: true,
+        //     onDelete: 'SET NULL',
+        //     references: {
+        //         model: 'user',
+        //         key: 'id'
+        //     }
+        // },
         authorAlias: {
             type: DataTypes.STRING,
             allowNull: true,

@@ -1,5 +1,4 @@
 const { Page } = require('../models');
-
 const pageData = [
     {
         pageName: "home"
