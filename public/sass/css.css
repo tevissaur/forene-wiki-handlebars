@@ -3,7 +3,7 @@
 }
 
 html {
-    background-image: url('assets/Forene_Map.png');
+    background-image: url('../assets/Forene_Map.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -19,21 +19,18 @@ nav {
     background-position: bottom right;
     background-repeat: no-repeat;
     border-bottom: 2px inset brown;
-    background-image: linear-gradient(to right, rgb(216, 175, 128), rgba(216, 175, 128, 0.5), rgba(216, 175, 128, 0.1)), url('assets/banner.jpg');
+    background-image: linear-gradient(to right, rgb(216, 175, 128), rgba(216, 175, 128, 0.5), rgba(216, 175, 128, 0.1)), url('../assets/banner.jpg');
 }
 
 .mobile-dropdown {
     display: none;
 }
 
-p.world-name {
+.world-name {
     grid-column: 2 / 9;
     font-size: 1.75em;
     margin: 0 0 0 0;
     padding-top: 2%;
-}
-
-p.world-name a {
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: black;
