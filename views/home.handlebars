@@ -1,14 +1,9 @@
-<h1 class="page-title">Home</h1>
+<div class="page-title-container">
+    <h1 class="page-title">Home</h1>
+    <hr class="page-header-separator">
 
-<p>
-
-
-</p>
-<hr class="page-header-separator">
-
+</div>
 <div class="main-page-left" id="main-index">
-
-
     <blockquote class="quote">
         "Who knows what secrets this world holds, but some things may be best left a secret.
         This
@@ -19,17 +14,11 @@
     <blockquote class="author">
         - <b>Artemon Fox</b>, inventor, scientist, philanthroper
     </blockquote>
-
-
     {{#each articles as |article|}}
-
     <article class="article-container">
-
         <h1 class="article-title">{{title}}</h1>
-
         {{#each images as |image|}}
         <figure class="article-pic-right row">
-
             <img src="/assets/{{title}}">
             <figcaption>{{description}}</figcaption>
         </figure>
@@ -38,18 +27,6 @@
             {{articleText}}
         </p>
     </article>
-
     {{/each}}
 </div>
-
-<div class="main-page-right">
-    <article class="article-container">
-        <h1 class="article-title">
-            Welcome to the DMs Guide to Forene!
-        </h1>
-        <p>
-            This site will tell you everything you need to know about this campaign setting. Cities
-            to start in, sites to go see, and fantastical creatures to meet.
-        </p>
-    </article>
-</div>
+{{> home-aside}}
