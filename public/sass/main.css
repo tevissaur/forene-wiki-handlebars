@@ -13,7 +13,9 @@ html {
   grid-gap: 0;
   margin: 5% auto;
   height: 90%;
-  width: 65%;
+  width: 60%;
+  -webkit-box-shadow: 0 0 10px #111111ad;
+          box-shadow: 0 0 10px #111111ad;
   background-color: rgba(255, 235, 212, 0.85);
 }
 
@@ -158,7 +160,7 @@ html {
   display: block;
 }
 
-.page-title-container {
+.wiki-site-wrapper .page-title-container {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   -ms-grid-column-span: 8;
@@ -168,21 +170,21 @@ html {
   grid-column: 1 / 9;
 }
 
-.page-title-container .page-title {
+.wiki-site-wrapper .page-title-container .page-title {
   margin: 2.5%;
   margin-bottom: 10px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: 2rem;
 }
 
-.page-title-container .page-header-separator {
+.wiki-site-wrapper .page-title-container .page-header-separator {
   margin-bottom: 0;
   padding-left: 2.5%;
   background-color: black;
   width: 90%;
 }
 
-.main-page-left {
+.wiki-site-wrapper .main-page-left {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   -ms-grid-column-span: 6;
@@ -196,7 +198,7 @@ html {
   text-align: left;
 }
 
-.main-page-left .quote {
+.wiki-site-wrapper .main-page-left .quote {
   font-size: large;
   font-style: oblique;
   text-align: center;
@@ -206,13 +208,13 @@ html {
   margin-top: 10px;
 }
 
-.main-page-left .author {
+.wiki-site-wrapper .main-page-left .author {
   font-style: italic;
   margin: 5px;
   text-align: center;
 }
 
-.main-page-left .article-title {
+.wiki-site-wrapper .main-page-left .article-title {
   text-align: left;
   padding: 3px;
   width: 97%;
@@ -221,21 +223,21 @@ html {
   border: 2.5px double rgba(165, 42, 42, 0.4);
 }
 
-.main-page-left .article-container {
+.wiki-site-wrapper .main-page-left .article-container {
   width: 100%;
   display: table;
 }
 
-.main-page-left .article-container a {
+.wiki-site-wrapper .main-page-left .article-container a {
   text-decoration: none;
   color: black;
 }
 
-.main-page-left .article-container a:hover {
+.wiki-site-wrapper .main-page-left .article-container a:hover {
   color: #a52a2a;
 }
 
-.main-page-left .article-container p {
+.wiki-site-wrapper .main-page-left .article-container p {
   text-align: justify;
   text-indent: 20px;
   font-size: 18px;
@@ -245,13 +247,13 @@ html {
   line-height: 1.5;
 }
 
-.main-page-left .article-container h2 {
+.wiki-site-wrapper .main-page-left .article-container h2 {
   width: 80%;
   font-size: 22px;
   margin-bottom: 0px;
 }
 
-.main-page-left .article-pic-left {
+.wiki-site-wrapper .main-page-left .article-pic-left {
   margin: 0;
   margin-left: 5px;
   margin-right: 20px;
@@ -259,19 +261,19 @@ html {
   float: left;
 }
 
-.main-page-left .article-pic-left figcaption {
+.wiki-site-wrapper .main-page-left .article-pic-left figcaption {
   color: black;
   font-style: oblique;
   padding: 2px;
   text-align: center;
 }
 
-.main-page-left .article-pic-left img {
+.wiki-site-wrapper .main-page-left .article-pic-left img {
   width: 100%;
   border: 5px double brown;
 }
 
-.main-page-left .article-pic-right {
+.wiki-site-wrapper .main-page-left .article-pic-right {
   float: right;
   display: block;
   width: 25%;
@@ -280,18 +282,18 @@ html {
   margin-right: 4%;
 }
 
-.main-page-left .article-pic-right img {
+.wiki-site-wrapper .main-page-left .article-pic-right img {
   border: 5px double brown;
   width: 100%;
 }
 
-.main-page-left .article-pic-right figcaption {
+.wiki-site-wrapper .main-page-left .article-pic-right figcaption {
   font-style: oblique;
   text-align: center;
   padding: 0;
 }
 
-.main-page-right {
+.wiki-site-wrapper .main-page-right {
   -ms-grid-row: 3;
   -ms-grid-column: 7;
   -ms-grid-column-span: 2;
@@ -306,13 +308,13 @@ html {
           transform: translate(0, -2px);
 }
 
-.main-page-right .article-container {
+.wiki-site-wrapper .main-page-right .article-container {
   background-color: rgba(197, 167, 133, 0.596);
   border: 6px ridge #a52a2a;
   padding: 10px;
 }
 
-.main-page-right .article-title {
+.wiki-site-wrapper .main-page-right .article-title {
   display: block;
   font-size: larger;
   text-align: center;
@@ -324,16 +326,16 @@ html {
   height: min-content;
 }
 
-.main-page-right .main-page-right a {
+.wiki-site-wrapper .main-page-right .main-page-right a {
   text-decoration: none;
   color: black;
 }
 
-.main-page-right .main-page-right a:hover {
+.wiki-site-wrapper .main-page-right .main-page-right a:hover {
   color: #a52a2a;
 }
 
-footer {
+.wiki-site-wrapper footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-row: 4;
@@ -345,24 +347,24 @@ footer {
   padding: 10px;
 }
 
-footer > section {
+.wiki-site-wrapper footer > section {
   border: 4px ridge #a52a2a;
   margin: 0 5px;
 }
 
-footer h2,
-footer p {
+.wiki-site-wrapper footer h2,
+.wiki-site-wrapper footer p {
   text-align: center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-footer form {
+.wiki-site-wrapper footer form {
   padding: 15px;
 }
 
-footer input[type="text"],
-footer select,
-footer textarea {
+.wiki-site-wrapper footer input[type="text"],
+.wiki-site-wrapper footer select,
+.wiki-site-wrapper footer textarea {
   width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -371,7 +373,7 @@ footer textarea {
   resize: vertical;
 }
 
-footer input[type="submit"] {
+.wiki-site-wrapper footer input[type="submit"] {
   background-color: #a52a2a;
   color: black;
   padding: 12px 20px;
@@ -383,11 +385,11 @@ footer input[type="submit"] {
   border-radius: 10px;
 }
 
-footer input[type="submit"]:hover {
+.wiki-site-wrapper footer input[type="submit"]:hover {
   background-color: #7a2020;
 }
 
-footer .bottom-l {
+.wiki-site-wrapper footer .bottom-l {
   grid-area: bl;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
@@ -397,11 +399,11 @@ footer .bottom-l {
   background-position: left;
 }
 
-footer .bottom-l h2 {
+.wiki-site-wrapper footer .bottom-l h2 {
   margin: 10% 10px auto 10px;
 }
 
-footer .bottom-m {
+.wiki-site-wrapper footer .bottom-m {
   grid-area: bm;
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
@@ -412,9 +414,9 @@ footer .bottom-m {
   text-align: center;
 }
 
-footer .bottom-m .download-button {
+.wiki-site-wrapper footer .bottom-m .download-button {
   text-decoration: none;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 24px;
   font-weight: bolder;
   color: black;
@@ -428,11 +430,11 @@ footer .bottom-m .download-button {
           box-shadow: 0 9px #999;
 }
 
-footer .bottom-m .download-button:hover {
+.wiki-site-wrapper footer .bottom-m .download-button:hover {
   background-color: #7a2020;
 }
 
-footer .bottom-m .download-button:active {
+.wiki-site-wrapper footer .bottom-m .download-button:active {
   background-color: #a52a2a;
   -webkit-box-shadow: 0 5px #666;
           box-shadow: 0 5px #666;
@@ -440,11 +442,11 @@ footer .bottom-m .download-button:active {
           transform: translateY(4px);
 }
 
-footer .bottom-m h2 {
+.wiki-site-wrapper footer .bottom-m h2 {
   margin: 10% 15px 20% 15px;
 }
 
-footer .bottom-r {
+.wiki-site-wrapper footer .bottom-r {
   display: -ms-grid;
   display: grid;
   grid-area: br;
@@ -454,16 +456,16 @@ footer .bottom-r {
   background-color: rgba(207, 190, 171, 0.5);
 }
 
-footer .top-button {
+.wiki-site-wrapper footer .top-button {
   margin-top: 90%;
 }
 
-footer .top-button a {
+.wiki-site-wrapper footer .top-button a {
   text-decoration: none;
   color: black;
 }
 
-footer .top-button a:hover {
+.wiki-site-wrapper footer .top-button a:hover {
   color: #7a2020;
 }
 /*# sourceMappingURL=main.css.map */
